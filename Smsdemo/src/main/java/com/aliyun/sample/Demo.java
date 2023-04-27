@@ -25,7 +25,7 @@ public class Demo {
 
     public static void sendMsg(String phonenumber) throws Exception {
         // 工程代码泄露可能会导致AccessKey泄露，并威胁账号下所有资源的安全性。以下代码示例仅供参考，建议使用更安全的 STS 方式，更多鉴权访问方式请参见：https://help.aliyun.com/document_detail/378657.html
-        com.aliyun.dysmsapi20170525.Client client = createClient("LTAI5tAW8KLjEQ9a9sw641jx", "6GChfu4ikGeGUhAxZHwZodrvZuW0F1");
+        com.aliyun.dysmsapi20170525.Client client = createClient("1", "1");
         com.aliyun.dysmsapi20170525.models.SendSmsRequest sendSmsRequest = new com.aliyun.dysmsapi20170525.models.SendSmsRequest()
                 .setPhoneNumbers(phonenumber)
                 .setSignName("成贺文个人博客")
